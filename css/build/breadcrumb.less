@@ -1,0 +1,15 @@
+// Overrides bootstraps breadcrumb styles
+
+.breadcrumb {
+  background-color: transparent;
+  padding: 0px;
+
+  a {
+    color: @breadcrumb-link-color !important;
+    &:hover {
+      text-decoration: none;
+      color: darken(@breadcrumb-link-color, 30%) !important;
+    }
+  }
+
+}

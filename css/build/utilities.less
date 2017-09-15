@@ -1,0 +1,96 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+
+// Floats
+// -------------------------
+
+.clearfix {
+  .clearfix();
+}
+.center-block {
+  .center-block();
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  .text-hide();
+}
+
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+  .translate3d(0, 0, 0);
+}
+
+.remove-all-margin-padding {
+margin:0 ! important;
+padding:0 ! important;
+}
+
+.spacer {
+	margin-top: 40px;
+}
+
+
+
+.nomargin {margin:0 ! important;}
+.nopadding {padding:0 ! important;}
+
+.sidepadding {padding: 0 10px;}
+.marginbottom {margin-bottom: 20px;}
+.margintop {margin-top: 20px;}
+
+.justify {text-align: justify}
+
+.img-center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+.text-muted {color: #DDD;}
+	
+
+@media (max-width: @screen-sm-min) {
+		img.centermobile {
+			text-align: center;
+			margin: 0px auto;
+		}
+		.nomobile {display: none;}
+	}
+	
+

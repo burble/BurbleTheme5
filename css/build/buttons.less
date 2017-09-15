@@ -1,0 +1,29 @@
+.btn {
+  .border-radius(@btn-border-radius);
+  padding-top: @btn-border-padding-topandbottom;
+  padding-bottom: @btn-border-padding-topandbottom;
+  padding-left: @btn-border-padding-leftandright;
+  padding-right: @btn-border-padding-leftandright;
+  font-size: 1.5em;
+}
+
+.btn-primary {
+	background-color: @btn-primary-color;
+	border-color: darken(@btn-primary-color, 10%);
+	border: none;
+	.quick-gradient(top, 0.1);
+	.transition(all, 0.5s, ease-in);
+//	.reflect(20%, 0.2);
+}
+.btn-primary:hover {
+	background-color: darken(@btn-primary-color, 10%);
+	.transition(all, 0.5s, ease-out);
+}
+
+.btn-success {
+  .button-variant(@btn-success-color, #00cc66, @btn-success-border);
+}
+
+.btn-default {
+  .button-variant(@body-type-color, @page-background-color, @default-button-border-color);
+}
